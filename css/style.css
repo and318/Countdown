@@ -1,0 +1,578 @@
+/* ==============================================================================================
+This copyright notice must be kept untouched in the stylesheet at all times.
+The original version of this stylesheet and the associated (x)html
+is available at http://www.script-tutorials.com/night-sky-with-twinkling-stars/
+Copyright (c) Script Tutorials. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any way to fit your requirements.
+================================================================================================= */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+body {
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+      margin-bottom: 60px;
+  background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 48.8%, rgba(43,79,105,1) 100%) rgba(0,0,0,1);
+  background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 48.8%, rgba(43,79,105,1) 100%) rgba(0,0,0,1);
+  background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 48.8%, rgba(43,79,105,1) 100%) rgba(0,0,0,1);
+  background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 48.8%, rgba(43,79,105,1) 100%) rgba(0,0,0,1);
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 48.8%, rgba(43,79,105,1) 100%) rgba(0,0,0,1);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#2b4f69', GradientType=0 );
+
+}
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+
+h3 {font-weight: 300;}
+.stars, .twinkling, .clouds, .sky{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+
+    #owl-demo .item{
+      margin: 3px;
+    }
+    #owl-demo .item img{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+
+.stars {
+  background: url(../img/stars.png) repeat top center;
+  height: 400px;
+  z-index:-2;
+}
+
+.twinkling{
+  background:transparent url(../img/twinkling.png) repeat top center;
+  z-index:-1;
+  height: 400px;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+
+/*
+.clouds{
+    background:transparent url(../img/clouds.png) repeat top center;
+    z-index:3;
+
+  -moz-animation:move-clouds-back 200s linear infinite;
+  -ms-animation:move-clouds-back 200s linear infinite;
+  -o-animation:move-clouds-back 200s linear infinite;
+  -webkit-animation:move-clouds-back 200s linear infinite;
+  animation:move-clouds-back 200s linear infinite;
+}
+*/
+.costumer-service {
+  background: #004B5E;
+  font-weight: 300;
+    padding: 10px 15px;
+}
+.shipping {
+  background-color: #5F1B40;
+  font-weight: 300;
+  padding: 10px 15px;
+}
+ .sky {
+  background: url("../img/sky.png");
+}
+.bag .fa-shopping-cart{
+  color: black
+}
+.kLogo {
+  margin-top: 20px;
+}
+.h {
+  color: cyan;
+}
+.m {color: magenta;}
+.n {color: yellow;}
+.hombre {
+  color: cyan;
+  border: 2px solid cyan;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+.title {
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.hombre .btn-link {
+  color: cyan;
+  font-weight: 300;
+  font-size: 12px;
+}
+.hombre .dropdown-menu {
+  background: cyan;
+  border-radius: 0;
+  text-align: center;
+  color: white;
+  min-width: 110px;
+  font-size: 12px;
+}
+.mujer .dropdown-menu {
+  background: magenta;
+  border-radius: 0;
+  text-align: center;
+  color: white;
+  min-width: 110px;
+  font-size: 12px;
+}
+.nino .dropdown-menu {
+  background: yellow;
+  border-radius: 0;
+  text-align: center;
+  color: white;
+  min-width: 110px;
+  font-size: 12px;
+}
+
+.mujer {
+  color: magenta;
+  border: 2px solid magenta;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+.mujer .btn-link {
+  color: magenta;
+  font-weight: 300;
+    font-size: 12px;
+}
+.nino {
+  color: yellow;
+  border: 2px solid yellow;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+.nino .btn-link {
+  color: yellow;
+  font-weight: 300;
+  font-size: 12px;
+}
+.marcas {
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+.marcas a {
+  color: white;
+  font-weight: 300;
+}
+.circles {
+  padding-top: 40px;
+
+  margin: 0 auto;
+}
+.top  {
+  margin-top:60px ;
+}
+.btn-link:hover {
+  text-decoration: none;
+}
+.main-logo {
+  padding: 30px;
+}
+.main-logo img {
+  margin: 0 auto;
+}
+.description i {
+  font-size: 40px
+}
+
+.social i {
+  color: white;
+  font-size: 50px;
+  padding: 0 5px;
+}
+.cyan {
+  border-bottom: 15px solid cyan;
+}
+.magenta {
+  border-bottom: 15px solid magenta;
+}
+.yellow {
+  border-bottom: 15px solid yellow;
+}
+.black {
+  border-bottom: 15px solid black;
+}
+#brand-carousel > a {
+    background-color: transparent;
+    background-image: url("../img/brands.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 138px;
+    transition: none 0s ease 0s ;
+    width: 130px;
+}
+#brand-carousel  > a.tnf {
+  background-position: 0 -138px;
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+#brand-carousel > a.kipling {
+  background-position: -130px -138px;
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+#brand-carousel > a.roxy {
+  background-position: -263px -143px;
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+#brand-carousel > a.dc {
+  background-position: -389px -140px;
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+#brand-carousel > a.timberland {
+  background-position: -520px -138px;
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+#brand-carousel > a.quiksilver {
+  background-position: -650px -140px;
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+#brand-carousel > a.ugg {
+  background-position: -780px -140px;
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+#brand-carousel > a.bb {
+  background-position: -910px -140px;
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+#brand-carousel > a.gopro {
+  background-position: -1040px -138px;
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+#brand-carousel > a.rayban {
+  background-position: -1170px -144px;
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+#brand-carousel > a.wrangler {
+  background-position: -1302px -138px;
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+#brand-carousel > a.teva {
+  background-position: -1433px -138px;
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+#brand-carousel > a.lee {
+  background-position: -1560px -138px;
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+#brand-carousel > a.sanuk {
+  background-position: -1690px -138px;
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+
+/*Hover carousel*/
+#brand-carousel  > a.tnf:hover {
+  background-position: 0 2px;
+  opacity: 1;
+}
+#brand-carousel > a.kipling:hover {
+  background-position: -130px 2px;
+  opacity: 1;
+}
+#brand-carousel > a.roxy:hover {
+  background-position: -263px -3px;
+  opacity: 1;
+}
+#brand-carousel > a.dc:hover {
+  background-position: -389px 0px;
+  opacity: 1;
+}
+#brand-carousel > a.timberland:hover {
+  background-position: -520px 2px;
+  opacity: 1;
+}
+#brand-carousel > a.quiksilver:hover {
+  background-position: -650px 0px;
+  opacity: 1;
+}
+#brand-carousel > a.ugg:hover {
+  background-position: -780px 0px;
+  opacity: 1;
+}
+#brand-carousel > a.bb:hover {
+  background-position: -910px 0px;
+  opacity: 1;
+}
+#brand-carousel > a.gopro:hover {
+  background-position: -1040px 2px;
+  opacity: 1;
+}
+#brand-carousel > a.rayban:hover {
+  background-position: -1170px -4px;
+  opacity: 1;
+}
+#brand-carousel > a.wrangler:hover {
+  background-position: -1302px 2px;
+  opacity: 1;
+}
+#brand-carousel > a.teva:hover {
+  background-position: -1433px 2px;
+  opacity: 1;
+}
+#brand-carousel > a.lee:hover {
+  background-position: -1560px 2px;
+  opacity: 1;
+}
+#brand-carousel > a.sanuk:hover {
+  background-position: -1690px 2px;
+  opacity: 1;
+}
+
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+     .costumer-service {
+    font-size: 12px;
+    text-align: center;
+  }
+  .shipping {
+    font-size: 12px;
+    text-align: center;
+  }
+  .disclaimer {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hombre, .mujer, .nino, .marcas{
+    width: 115px;
+    height: 115px;
+  }
+  .circles {
+    padding-top: 16px;
+  }
+  .links_marcas .circles {
+    padding-top: 26px;
+  }
+  .title {
+  font-size: 10px;
+}
+      .costumer-service {
+    font-size: 10px;
+    text-align: center;
+  }
+  .shipping {
+    font-size: 10px;
+    text-align: center;
+  }
+  .disclaimer {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+    .title {
+  font-size: 10px;
+}
+    .costumer-service {
+    font-size: 11px;
+    text-align: center;
+  }
+  .shipping {
+    font-size: 11px;
+    text-align: center;
+  }
+  .disclaimer {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+  .dsctos .hombre,  .dsctos .mujer,  .dsctos .nino,  .dsctos .marcas {
+    width: 200px;
+    height: 200px;
+    padding: 20px 0;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 640px) {
+
+   .dsctos .hombre,  .dsctos .mujer,  .dsctos .nino,  .dsctos .marcas {
+    padding-top: 60px;
+  }
+  .dsctos .title {
+    font-size: 20px;
+    padding-top: 15px;
+  }
+   .dsctos {padding: 20px 0;}
+  .h,.m,.n {
+    font-size: 18px;
+  }
+}
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .hombre, .mujer, .nino, .marcas {
+    width: 100px;
+    height: 100px;
+  }
+    .circles {
+    padding-top: 10px;
+  }
+  .stars, .twinkling {
+    height: 150px;
+  }
+  .costumer-service {
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 10px;
+  }
+  .shipping {
+    font-size: 12px;
+    text-align: center;
+  }
+  .disclaimer {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+    .myBag {display: none;}
+  .dsctos {padding: 20px 0;}
+  .dsctos .title {
+    font-size: 20px;
+    padding-top: 15px;
+  }
+   .dsctos .hombre,  .dsctos .mujer,  .dsctos .nino,  .dsctos .marcas {
+    padding-top: 60px;
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 320px) {
+    .hombre, .mujer, .nino, .marcas {
+    width: 80px;
+    height: 80px;
+  }
+    .circles {
+    padding-top: 4px;
+  }
+  .circles h1 {
+    font-size: 25px;
+  }
+  .stars, .twinkling {
+    height: 150px;
+  }
+  .shipping {
+    font-size: 11px;
+    padding: 5px;
+  }
+  .myBag {display: none;}
+    .h,.m,.n {
+    font-size: 14px;
+  }
+}
