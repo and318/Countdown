@@ -17,14 +17,14 @@ setInterval(function () {
     // do some time calculations
     days = parseInt(seconds_left / 86400);
     seconds_left = seconds_left % 86400;
-
-    hours = parseInt(seconds_left / 3600)+(24*days);
+    //If only show hours use this 'remove hours = parseInt(seconds_left / 3600)+(24*days);'
+    hours = parseInt(seconds_left / 3600);
     seconds_left = seconds_left % 3600;
 
     minutes = parseInt(seconds_left / 60);
     seconds = parseInt(seconds_left % 60);
 
     // format countdown string + set tag value
-    countdown.innerHTML = '<div class="col-xs-4 col-sm-2 col-sm-offset-3 text-center"><h1>' + hours +  ' </h1>Horas</div></div><div class="col-xs-4 col-sm-2 text-center"><h1>' + minutes +  ' </h1>Minutos</div><div class="  col-xs-4 col-sm-2 text-center"><h1>' + seconds +  ' </h1><div class="title n">Segundos</span></div>';
+    countdown.innerHTML = '<div class="col-xs-3   text-center"><h1>' + days +  ' </h1>Horas</div><div class="col-xs-3   text-center"><h1>' + hours +  ' </h1>Horas</div><div class="col-xs-3  text-center"><h1>' + minutes +  ' </h1>Minutos</div><div class="col-xs-3 text-center"><h1>' + seconds +  ' </h1>Segundos</div>';
 
 }, 1000);
