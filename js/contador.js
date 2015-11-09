@@ -25,6 +25,6 @@ setInterval(function () {
     seconds = parseInt(seconds_left % 60);
 
     // format countdown string + set tag value
-    countdown.innerHTML = '<div class="col-xs-4 col-sm-2 col-sm-offset-3 text-center"><div class="hombre circles"><h1>' + hours +  ' </h1></div><div class="title h">Horas</div></div><div class="  col-xs-4 col-sm-2 text-center"><div class=" mujer circles"><h1>' + minutes +  ' </h1></div><div class="title m">Minutos</div></div><div class="  col-xs-4 col-sm-2 text-center"><div class="nino circles"><h1>' + seconds +  ' </h1></div><div class="title n">Segundos</span></div>';
+    countdown.innerHTML = '<div class="col-xs-4 col-sm-2 col-sm-offset-3 text-center"><h1>' + hours +  ' </h1>Horas</div></div><div class="col-xs-4 col-sm-2 text-center"><h1>' + minutes +  ' </h1>Minutos</div><div class="  col-xs-4 col-sm-2 text-center"><h1>' + seconds +  ' </h1><div class="title n">Segundos</span></div>';
 
 }, 1000);
